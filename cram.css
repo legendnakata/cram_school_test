@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+
+*{
+    background-color: #BDD7D6;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border: 1px solid #000000;
+    background-color: #2F7C75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #2F7C75;
+}
+
+#study, #self_study, #formula {
+    width: 50%;
+    margin: 0;
+}
+
+#study h2, #self_study h2, #formula h2 {
+    color: #ffffff;
+    border: 1px solid #2F7C75;
+    background-color: #2F7C75;
+    margin: 0;
+    padding: 0; 
+}
+
+
+#grade > li, #gakunen > li {
+    background: #4B9D96;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0; /* 余白を削除 */
+    padding: 0.5em 0; /* 必要に応じてパディングを調整 */
+}
+
+#grade .problem, #gakunen .formula {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0; /* 余白を削除 */
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
