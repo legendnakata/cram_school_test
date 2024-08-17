@@ -1,13 +1,24 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="0819_test.css">
-        <script type="text/javascript"></script>
-    </head>
-    <body>
-        <h1>8/19のテスト</h1>
-        <a href="marking_test0819.html">採点</a><br>
-        <a href="">テストの問題を見る</a><br>
-        <a href="comment_test.html">テストの解答・解説を見る</a>
-    </body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="0819_test.css">
+    <script type="text/javascript">
+        function pass() {
+            var user_pass = window.prompt("パスワードを入力してください:");
+            var correct_pass = "1021"; 
+            if (user_pass === correct_pass) {
+                window.location.href = "comment_test.html";
+            } else {
+                alert("パスワードが間違っています。");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>8/19のテスト</h1>
+    <a href="marking_test0819.html">採点</a><br>
+    <a href="">テストの問題を見る</a><br>
+    <a href="javascript:void(0);" onclick="pass()">テストの解答・解説を見る</a>
+</body>
 </html>
